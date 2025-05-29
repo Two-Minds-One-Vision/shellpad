@@ -7,9 +7,15 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "supa/pull": "supabase db pull && npm run supa/types",
+    "supa/push": "supabase db push",
+    "supa/new": "supabase migration new",
+    "supa/migrate": "supabase migration up && npm run supa/types",
+    "supa/types": "supabase gen types typescript --local > src/supabase/database.types.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
     "@tailwindcss/vite": "^4.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
