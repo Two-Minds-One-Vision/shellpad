@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const fetchUsers = async () => {
       const { data, error } = await supabase.from('users').select();
-      console.log('data', data); // REMOVE
+
       if (error) {
         console.error('Error fetching users:', error);
       } else {
