@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { supabase } from './supabase';
+import { supabase, type User } from './supabase';
 
 function App() {
-  const [users, setUsers] = useState<any[]>([]);
+  const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
