@@ -27,3 +27,7 @@
 
 - **Recall challenges**  
   Hard to revisit or build on what was learned over time.
+
+## Design Map
+
+![High Level Design Map](designMap.png)
